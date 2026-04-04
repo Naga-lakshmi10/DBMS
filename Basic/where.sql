@@ -1,34 +1,27 @@
--- Select all employees
-SELECT * FROM Employee;
+-- ============================================
+-- WHERE
+-- Syntax:
+-- SELECT column_name
+-- FROM table_name
+-- WHERE condition;
+-- ============================================
 
--- Employees with salary greater than 25000
+-- Filter by salary
 SELECT * FROM Employee
-WHERE salary > 25000;
+WHERE salary > 30000;
 
--- Employees with salary less than 30000
-SELECT * FROM Employee
-WHERE salary < 30000;
-
--- Employees from CSE department
+-- Filter by department
 SELECT * FROM Employee
 WHERE department = 'CSE';
 
--- Employees NOT from CSE
+-- Multiple conditions (AND)
 SELECT * FROM Employee
-WHERE department != 'CSE';
+WHERE department = 'CSE' AND salary > 25000;
 
--- Employees with salary between 25000 and 30000
+-- Range condition
 SELECT * FROM Employee
-WHERE salary BETWEEN 25000 AND 30000;
+WHERE salary BETWEEN 25000 AND 40000;
 
--- Employees in IT or ECE department
+-- Pattern matching
 SELECT * FROM Employee
-WHERE department IN ('IT', 'ECE');
-
--- Employees whose name starts with 'P'
-SELECT * FROM Employee
-WHERE name LIKE 'P%';
-
--- Employees with salary >= 28000 AND from IT
-SELECT * FROM Employee
-WHERE salary >= 28000 AND department = 'IT';
+WHERE name LIKE 'R%';
