@@ -1,15 +1,21 @@
--- Select all records from Employee table
+-- ============================================
+-- SELECT
+-- Syntax:
+-- SELECT column1, column2
+-- FROM table_name;
+-- ============================================
+
+-- Select all columns
 SELECT * FROM Employee;
 
--- Select only employee names
-SELECT name FROM Employee;
+-- Select specific columns
+SELECT name, salary
+FROM Employee;
 
--- Select name and salary
-SELECT name, salary FROM Employee;
+-- Select with column alias
+SELECT name AS employee_name, salary AS employee_salary
+FROM Employee;
 
--- Select only department column
-SELECT department FROM Employee;
-
--- Select employees with salary greater than 25000
-SELECT * FROM Employee
-WHERE salary > 25000;
+-- Select distinct values
+SELECT DISTINCT department
+FROM Employee;
