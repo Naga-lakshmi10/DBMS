@@ -18,3 +18,4 @@ VALUES
 -- Insert without specifying columns (not recommended)
 INSERT INTO Employee
 VALUES (4, 'Anu', 45000, 'CSE');
+
