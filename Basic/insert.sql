@@ -7,7 +7,7 @@
 
 -- Insert a single record
 INSERT INTO Employee (id, name, salary, department)
-VALUES (1, 'Vijay', 25000, 'CSE');
+VALUES (1, 'Vijay', 250000, 'CSE');
 
 -- Insert multiple records
 INSERT INTO Employee (id, name, salary, department)
@@ -17,5 +17,8 @@ VALUES
 
 -- Insert without specifying columns (not recommended)
 INSERT INTO Employee
-VALUES (4, 'Anu', 45000, 'CSE');
+VALUES 
+  (4, 'Anu', 45000, 'CSE'),
+  (5,'John',50000,'CSE');
+
 
