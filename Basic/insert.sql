@@ -15,10 +15,8 @@ VALUES
 (2, 'Ravi', 30000, 'ECE'),
 (3, 'Priya', 28000, 'IT');
 
--- Insert without specifying columns (not recommended)
-INSERT INTO Employee
+-- Insert remaining records (recommended way)
+INSERT INTO Employee (id, name, salary, department)
 VALUES 
-  (4, 'Anu', 45000, 'CSE'),
-  (5,'John',50000,'CSE');
-
-
+(4, 'Anu', 45000, 'CSE'),
+(5, 'John', 50000, 'CSE');
