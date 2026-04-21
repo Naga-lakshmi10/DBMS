@@ -8,7 +8,6 @@
 -- ============================================
 
 -- Example: Join Employee and Department tables
-
 SELECT 
     e.id,
     e.name,
